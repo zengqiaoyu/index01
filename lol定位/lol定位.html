@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            margin: 200px auto;
+            border: 1px solid #bd9b52;
+            width: 1100px;
+            height: 104px;
+            background: url(./156.png) no-repeat 0px 0px;
+            background-color: #262F3A;
+            background-size: 440px 240px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .wenzi1 {
+            float: left;
+            color: white;
+            line-height: 104px;
+            text-indent: 4em;
+            font-size: 13px;
+        }
+        .img1 {
+            margin: 35PX 0PX 0PX 100PX;
+            float: left;
+            /* border: 1px solid red; */
+            width: 50px;
+            height: 50px;
+            background: url(./sprite-img.png) no-repeat -85px -290px;
+        }
+        .img1>span {
+            color: goldenrod;
+            position: relative;
+            top: 15px;
+            left: 20px;
+        }
+        .img2 {
+            /* border: 1px solid red; */
+            width: 700px;
+            height: 80px;
+            float: right;
+            margin-top: 25px;
+           
+        }
+       
+        .img3 {
+            border: 1px solid blue;
+            border-radius: 50px;
+            background: url(./156\ \(1\).png) no-repeat;
+            background-size: 60px 60px;
+            
+        }
+        .img4 {
+            border: 1px solid green;
+            border-radius: 50px;
+            background: url(./164.png) no-repeat;
+            background-size: 60px 60px;
+        }
+        .img5 {
+            border: 1px solid green;
+            border-radius: 50px;
+            background: url(./173.png) no-repeat;
+            background-size: 60px 60px;
+        }
+        .img6 {
+            border: 1px solid red;
+            border-radius: 50px;
+            background: url(./175.png) no-repeat;
+            background-size: 60px 60px;
+        }
+       
+        .img7 {
+            border: 1px solid green;
+            border-radius: 50px;
+            background: url(./186.png) no-repeat;
+            background-size: 60px 60px;
+        }
+        .img8 {
+            border: 1px solid yellow;
+            border-radius: 50px;
+            background: url(./190.png) no-repeat;
+            background-size: 60px 60px;
+        }
+        .img9 {
+            border: 1px solid blue;
+            border-radius: 50px;
+            background: url(./138.png) no-repeat;
+            background-size: 60px 60px;
+        }
+        .img10 {
+            border: 1px solid rgb(234, 235, 176);
+            border-radius: 50px;
+            background: url(./147.png) no-repeat;
+            background-size: 60px 60px;
+        }
+        .img11 {
+            border: 1px solid red;
+            border-radius: 50px;
+            background: url(./153.png) no-repeat;
+            background-size: 60px 60px;
+        }
+        /* .img6 {
+            border: 1px solid green;
+            border-radius: 50px;
+            background: url(./156\ \(1\).png) no-repeat;
+            background-size: 60px 60px;
+        } */
+        .img2>div {
+            margin-left: 10px;
+            width: 55px;
+            height: 55px;
+            float: left;
+        }
+        .xingxing {
+            /* border: 1px solid red; */
+            width: 20px;
+            height: 20px;
+            background: url(./sprite-img.png) no-repeat -306px -288px;
+            position: absolute;
+            top: 12px;
+            left: 405px;
+        }
+        .xingxing2 {
+            /* border: 1px solid red; */
+            width: 20px;
+            height: 20px;
+            background: url(./sprite-img.png) no-repeat -306px -288px;
+            position: absolute;
+            top: 5px;
+            left: 425px;
+        }
+        .xingxing3 {
+            /* border: 1px solid red; */
+            width: 20px;
+            height: 20px;
+            background: url(./sprite-img.png) no-repeat -306px -288px;
+            position: absolute;
+            top: 12px;
+            left: 445px;
+        }
+        .xingxing4 {
+            /* border: 1px solid red; */
+            width: 20px;
+            height: 20px;
+            background: url(./sprite-img.png) no-repeat -306px -288px;
+            position: absolute;
+            top: 12px;
+            left: 535px;
+        }
+        .xingxing5 {
+            /* border: 1px solid red; */
+            width: 20px;
+            height: 20px;
+            background: url(./sprite-img.png) no-repeat -306px -288px;
+            position: absolute;
+            top: 5px;
+            left: 560px;
+        }
+        .xingxing6 {
+            /* border: 1px solid red; */
+            width: 20px;
+            height: 20px;
+            background: url(./sprite-img.png) no-repeat -306px -288px;
+            position: absolute;
+            top: 12px;
+            left: 585px;
+        }
+        .xingxing7 {
+            /* border: 1px solid red; */
+            width: 20px;
+            height: 20px;
+            background: url(./sprite-img.png) no-repeat -306px -288px;
+            position: absolute;
+            top: 12px;
+            left: 670px;
+        }
+        .xingxing8 {
+            /* border: 1px solid red; */
+            width: 20px;
+            height: 20px;
+            background: url(./sprite-img.png) no-repeat -306px -288px;
+            position: absolute;
+            top: 5px;
+            left: 695px;
+        }
+        .xingxing9 {
+            /* border: 1px solid red; */
+            width: 20px;
+            height: 20px;
+            background: url(./sprite-img.png) no-repeat -306px -288px;
+            position: absolute;
+            top: 12px;
+            left: 720px;
+        }
+        .ji {
+            position: absolute;
+            top: 78px;
+            left: 418px;
+        }
+        .ji>img {
+            width: 15px;
+            height: 15px;
+            float: left;
+        }
+        .jineng {
+            position: absolute;
+            top: 78px;
+            left: 488px;
+        }
+        .jineng>img {
+            width: 15px;
+            height: 15px;
+            float: left;
+        }
+        .jiji {
+            position: absolute;
+            top: 78px;
+            left: 558px;
+        }
+        .jiji>img {
+            width: 15px;
+            height: 15px;
+            float: left;
+        }
+        .food {
+            color: white;
+            position: absolute;
+            top: 40px;
+            right: 25px;  
+            color: #bd9b52;               
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="wenzi1">
+            【神剑】6剑士3奥德赛2星神
+        </div>
+        <div class="img1">
+           <span>S</span>
+        </div>
+        <div class="img2">
+            <div class="img3">
+
+            </div>
+            <div class="img4">
+
+            </div>
+            <div class="img5">
+
+            </div>
+            <div class="img6">
+
+            </div>
+            <div class="img7">
+
+            </div>
+            <div class="img8">
+
+            </div>
+            <div class="img9">
+
+            </div>
+            <div class="img10">
+
+            </div>
+            <div class="img11">
+
+            </div>
+        </div>
+        <div class="xingxing">
+
+        </div>
+        <div class="xingxing2">
+
+        </div>
+        <div class="xingxing3">
+
+        </div>
+        <div class="xingxing4">
+
+        </div>
+        <div class="xingxing5">
+
+        </div>
+        <div class="xingxing6">
+
+        </div>
+        <div class="xingxing7">
+
+        </div>
+        <div class="xingxing8">
+
+        </div>
+        <div class="xingxing9">
+
+        </div>
+        <div class="ji">
+                <img src="./317.png"/>
+                <img src="./322.png"/>
+                <img src="./319.png"/>
+        </div>
+        <div class="jineng">
+            <img src="./326.png"/>
+            <img src="./336.png"/>
+        </div>
+        <div class="jiji">
+            <img src="./319.png"/>
+            <img src="./347.png"/>
+        </div>
+
+        <div class="food">
+            &gt;
+        </div>
+    </div>
+</body>
+</html>
